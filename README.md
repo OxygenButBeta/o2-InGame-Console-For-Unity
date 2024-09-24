@@ -29,7 +29,7 @@
 
 ### Installation
 
-1. Clone or download the **O2 Console** repository or download the unity package.
+1. Clone the **O2 Console** repository or download the unity package.
 2. Import the O2 Console scripts into your Unity project.
 3. **Set up the Console UI**: The project includes a ready-to-use prefab for the console. Simply drag and drop the prefab into your scene to integrate the in-game console with an input field and log display.
 4. Optionally, configure a hotkey to toggle the console (e.g., `~` key).
