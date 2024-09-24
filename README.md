@@ -17,7 +17,7 @@
 
 ---
 ## Ready-to-use user interface
-![O2 Console Screenshot](Console UI Images/ConsoleIM (5).png)
+![O2 Console Screenshot](Console%20UI%20Images/ConsoleIM%20(5).png)
 
 ## Getting Started
 
