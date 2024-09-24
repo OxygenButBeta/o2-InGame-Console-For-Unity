@@ -13,7 +13,7 @@
 - **Static and Instance Methods**: Supports executing both static and instance methods.
 - **Scene Discovery on Initialization**: O2 Console scans and interacts with objects present at scene load. For objects created during runtime, manual subscription to the console is required.
 - **Supports Parameter Passing**: Command methods can accept one parameter, and the console automatically converts the input to match the method signature.
-- **Exception Handling**: Automatically catches and logs exceptions from commands.
+- **Exception Handling**: Automatically catches logs & exceptions and print it out to the console.
 - **Built-in Commands**: Includes commands like `/Clear` to clear console logs, with additional built-in functionality to interact with the game and the engine.
 
 
