@@ -17,7 +17,8 @@
 
 ---
 ## Ready-to-use user interface
- ![O2 Console Screenshot]([images/console_screenshot.png](https://github.com/OxygenButBeta/o2-InGame-Console-For-Unity/blob/main/Console%20UI%20Images/ConsoleIM%20(5).png))
+![O2 Console Screenshot](Console UI Images/ConsoleIM (5).png)
+
 ## Getting Started
 
 ### Installation
