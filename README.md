@@ -16,7 +16,8 @@
 - **Built-in Commands**: Includes commands like `/Clear` to clear console logs, with additional built-in functionality to interact with the game.
 
 ---
-
+## Ready-to-use user interface
+ ![O2 Console Screenshot]([images/console_screenshot.png](https://github.com/OxygenButBeta/o2-InGame-Console-For-Unity/blob/main/Console%20UI%20Images/ConsoleIM%20(5).png))
 ## Getting Started
 
 ### Installation
