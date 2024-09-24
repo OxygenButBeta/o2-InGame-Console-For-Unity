@@ -24,66 +24,35 @@
 1. Clone or download the **O2 Console** repository or download the unity package.
 2. Import the O2 Console scripts into your Unity project.
 3. **Set up the Console UI**: The project includes a ready-to-use prefab for the console. Simply drag and drop the prefab into your scene to integrate the in-game console with an input field and log display.
-
 4. Optionally, configure a hotkey to toggle the console (e.g., `~` key).
 
 ### Usage
 
 To define a console command, simply use the `[ConsoleCommand]` attribute above any static or instance method, as well as public or private properties. The console will automatically register it for in-game use.
 
+Property & Field Example (Public & private)
 ```csharp
-// Method Example
-[ConsoleCommand("SomeFunction")]
-static void SomeFunction()
-{
-    // Do Something
-}
-
-// Property Example (Public)
-public class ExampleClass
-{
-    private int _value;
-
     [ConsoleCommand("GetValue")]
-    public int Value
-    {
-        get { return _value; }
-        set { _value = value; }
-    }
-}
+    public int Value {get; set;}
 
-// Property Example (Private)
-public class ExampleClass
-{
-    private int _privateValue;
+    [ConsoleCommand("GetStaticValue")]
+    public static int StaticValue {get; set;}
 
     [ConsoleCommand("GetPrivateValue")]
-    private int PrivateValue
-    {
-        get { return _privateValue; }
-    }
-}
+    private int PrivateValue;
+```````
+Instance & Static Method Example
+```csharp
 
-// Instance Method Example
-public class ExampleInstance
-{
     [ConsoleCommand("InstanceMethod")]
     public void InstanceMethod()
     {
         // Do Something
     }
-}
-
-// Static Property Example
-public class StaticExample
-{
-    private static int _staticValue;
-
-    [ConsoleCommand("GetStaticValue")]
-    public static int StaticValue
+    
+    [ConsoleCommand("SomeFunction")]
+    static string SomeFunction()
     {
-        get { return _staticValue; }
-        set { _staticValue = value; }
+       return // Do Something
     }
-}
 ```````
