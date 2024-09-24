@@ -17,7 +17,7 @@
 
 ---
 ## Ready-to-use user interface
-<img src="ConsoleUIImages/ConsoleIM.png" alt="O2 Console Screenshot" width="500"/>
+![O2 Console Screenshot](Console%20UI%20Images/ConsoleIM%20(5).png)
 ### Additional Screenshots
 - [Screenshot 1](Console%UI%Images/ConsoleIM%(2).png)
 - [Screenshot 2](Console%UI%Images/ConsoleIM%(4).png)
