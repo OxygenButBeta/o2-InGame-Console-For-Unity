@@ -16,13 +16,13 @@ public class SuggestionLine : MonoBehaviour, IPointerClickHandler
         else _textField.text = "<color=orange>" + suggestionText.text + "</color>: ";
     }
 
-    public void SetText(string MetodKey, Type reType, TMP_InputField _textFieldInput)
+    public void SetText(string CommandKey, Type reType, TMP_InputField _textFieldInput)
     {
         _commandType = reType;
         TypeText.text = reType is not null ? reType.ToString().Split(".")[1] : "null";
-        if (TypeText.text.Length > 11) TypeText.text = TypeText.text.Substring(0, 11) + "..";
+        if (TypeText.text.Length > 11) TypeText.text = TypeText.text[..11] + "..";
 
         _textField = _textFieldInput;
-        suggestionText.text = MetodKey;
+        suggestionText.text = CommandKey;
     }
 }

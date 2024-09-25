@@ -11,12 +11,6 @@ public class RuntimeAttributeFinder : MonoBehaviour
         SceneManager.activeSceneChanged += OnSceneChanged;
     }
 
-    void Start()
-    {
-        if (!RunOnSceneChanges)
-            Debug.Log("Runtime Attribute Finder is not going to run. Instances must add attributes manually.");
-    }
-
     void OnSceneChanged(Scene arg0, Scene arg1)
     {
         if (RunOnSceneChanges)

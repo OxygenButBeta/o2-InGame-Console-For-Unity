@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5566038, g: 0.26454967, b: 0, a: 1}
+  m_Color: {r: 0.36907738, g: 0.41509432, b: 0.14293341, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -371,8 +371,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Console Log :: Volume Set To 1'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f8f673b80987e049a4be93cc7b7395f, type: 2}
+  m_sharedMaterial: {fileID: 1600564180294453291, guid: 2f8f673b80987e049a4be93cc7b7395f,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

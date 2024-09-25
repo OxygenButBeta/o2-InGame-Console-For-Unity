@@ -16,8 +16,7 @@ namespace InGame_Console.InGame_Console_System.Scripts
 
 
             var paramType = targetMember.Member.GetParameterType();
-            object data = null;
-            if (paramType != null) data = CommandDataResolver.GetData(DataKey, targetMember.Member.GetParameterType());
+            var data = paramType != null ? CommandDataResolver.GetData(DataKey, paramType) : null;
             InvokeMember(targetMember, data);
         }
 

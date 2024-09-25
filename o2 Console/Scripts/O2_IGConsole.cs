@@ -7,14 +7,11 @@ public class O2_IGConsole : MonoBehaviour
     [SerializeField] int MaxLogCount = 100;
     [SerializeField] GameObject linePrefab;
     [SerializeField] Transform logParent;
-    List<Line> lines;
+    readonly List<Line> lines = new();
     LogType LastType = LogType.Assert;
 
     void Awake()
     {
-        lines = new List<Line>(MaxLogCount);
-
-        ClearConsole();
         Application.logMessageReceivedThreaded += HandleLog;
     }
 
@@ -39,21 +36,15 @@ public class O2_IGConsole : MonoBehaviour
         Application.logMessageReceivedThreaded -= HandleLog;
     }
 
+    // ReSharper disable once FlagArgument
     void HandleLog(string condition, string stacktrace, LogType _type)
     {
-        var color = Color.white;
-        switch (_type)
+        var color = _type switch
         {
-            case LogType.Warning:
-                color = Color.yellow;
-                break;
-            case LogType.Error:
-                color = Color.red;
-                break;
-            case LogType.Exception:
-                color = Color.red;
-                break;
-        }
+            LogType.Warning => Color.yellow,
+            LogType.Error or LogType.Exception => Color.red,
+            _ => Color.white
+        };
 
         if (LastType == LogType.Log && _type == LogType.Log)
         {

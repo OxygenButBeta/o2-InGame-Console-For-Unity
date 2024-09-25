@@ -54,7 +54,7 @@ public class ConsoleInputHandler : MonoBehaviour
         CommandInvoker.InvokeCommand(command.Command, command.DataKey);
     }
 
-    public void OnCommandTextValueChanged(string str)
+    void OnCommandTextValueChanged(string str)
     {
         if (string.IsNullOrEmpty(str))
         {
